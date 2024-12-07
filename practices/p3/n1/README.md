@@ -14,7 +14,7 @@
 
 ```mermaid
 graph TB
-    A[Начало] --> B[Ввод A, B, C];
+    A((Начало)) --> B[/Ввод A, B, C/];
     B --> C[pos_count = 0];
     C --> D{A > 0?};
     D -- Да --> E[pos_count + 1];
@@ -26,9 +26,9 @@ graph TB
     H -- Да --> I[pos_count + 1];
     H -- Нет --> I;
     I --> J{pos_count == 2?};
-    J -- Да --> K[Вывод True];
-    J -- Нет --> L[Вывод False];
-    K --> M[Конец];
+    J -- Да --> K[/Вывод True/];
+    J -- Нет --> L[/Вывод False/];
+    K --> M((Конец));
     L --> M;
 ```
 

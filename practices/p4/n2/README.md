@@ -15,15 +15,15 @@
 
 ```mermaid
 graph TB
-    A[Начало] --> B[Ввод A, B];
+    A((Начало)) --> B[/Ввод A, B/];
     B --> C[count = 0];
     C --> D[current_length = 0];
     D --> E{current_length + B <= A?};
     E -- Да --> F[count + 1];
     F --> G[current_length + B];
     G --> E;
-    E -- Нет --> H[Вывод count];
-    H --> I[Конец];
+    E -- Нет --> H[/Вывод count/];
+    H --> I((Конец));
 ```
 
 
