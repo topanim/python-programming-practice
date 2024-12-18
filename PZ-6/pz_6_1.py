@@ -3,14 +3,6 @@
 Вывести элементы списка в следующем порядке: A[1], A[2], A[N], A[N-1], A[3], A[4], A[N-2], A[N-3], … .
 """
 
-def parse_list(input_string):
-    """Преобразует строку с элементами списка в список целых чисел."""
-    try:
-        return [int(x.strip()) for x in input_string.split(',')]
-    except ValueError:
-        print("Ошибка ввода. Пожалуйста, введите числа, разделенные запятыми.")
-        return None  # Возвращаем None в случае ошибки
-
 
 def print_list_custom_order(a):
     """Выводит элементы списка в заданном порядке."""
@@ -29,8 +21,7 @@ def print_list_custom_order(a):
 
 
 try:
-    input_string = input("Введите элементы списка через запятую: ")
-    a = parse_list(input_string)
+    a = [int(input("Введите следующее число: ")) for i in range(int(input("Введи N: ")))]
 
     if a:  # Проверяем, что список успешно создан
         print_list_custom_order(a)

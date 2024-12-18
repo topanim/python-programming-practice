@@ -17,8 +17,7 @@ def cyclic_shift(a, k):
 
 
 try:
-    input_string = input("Введите элементы списка через запятую: ")
-    a = [int(x) for x in input_string.split(',')]
+    a = [int(input("Введите следующее число: ")) for i in range(int(input("Введи N: ")))]
     k = int(input("Введите число K (1 < K < 4 и K < N): "))
     if 1 < k < 4 and k < len(a):
         cyclic_shift(a, k)

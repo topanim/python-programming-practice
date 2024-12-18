@@ -21,8 +21,7 @@ def print_sorted_indices(indices):
 
 
 try:
-    input_string = input("Введите элементы списка через запятую: ")
-    a = [int(x) for x in input_string.split(',')]
+    a = [int(input("Введите следующее число: ")) for i in range(int(input("Введи N: ")))]
     indices = find_duplicates(a)
     if indices:
         print_sorted_indices(indices)

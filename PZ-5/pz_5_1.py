@@ -8,7 +8,7 @@ def calculate_sum(n, m):
     Вычисляет сумму чисел от n до m включительно.
     """
     sum = 0
-    for i in range(n, m + 1):
+    for i in range(n, m):
         sum += i
     return sum
 
